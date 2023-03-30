@@ -21,7 +21,7 @@ const doneTodoCount = computed(() =>
 );
 
 const handleCreateTodo = () => {
-  if (!todoInput) return;
+  if (!todoInput.value) return;
 
   todoList.value.unshift({
     id: uuidv4(),
